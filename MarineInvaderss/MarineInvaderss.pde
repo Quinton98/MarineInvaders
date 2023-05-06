@@ -2,6 +2,7 @@ import processing.sound.*;
 SoundFile music;
 Spaceship mySpaceship;
 ArrayList bullets;
+int menu= 0;
 ArrayList bombs;
 float distance_enemy;
 int lives;
@@ -17,13 +18,19 @@ boolean gameOn=true;
 int deadAliens=0;
 int lastGuy=0;
 
-import processing.sound.*;
-void setup() {
- ocean = loadImage("oceans.jpeg");
- sub = loadImage("sub.png");
-music = new SoundFile(this, "intensemusic.mp3");
-music.play();
+Button  StartButton; 
 
+import processing.sound.*;
+
+
+void setup() {
+  ocean = loadImage("oceans.jpeg");
+  sub = loadImage("sub.png");
+  music = new SoundFile(this, "intensemusic.mp3");
+  music.play();
+  
+  
+  StartButton = new Button(550,500,100,50,"Start",0,200,200);
   size(1200, 700);
   smooth();
 
@@ -47,16 +54,37 @@ music.play();
   timer.start();
 }
 
-void draw() {
-  fill(0,50);
-  image(ocean,600,350,1250,700);
-  imageMode(CENTER);
-  rect(0, 0, width, height);
 
+void draw() {
+  {
+    image(ocean,600,350,1250,700);
+    switch(menu)
+    {
+      case 0:
+      {
+      fill(0,50);
+      image(ocean,600,350,1250,700);
+      imageMode(CENTER);
+      rect(0, 0, width, height);
+      textSize(60);
+      textAlign(CENTER,CENTER);
+      text("Welcome to MarineInvaders",width/2,100);      
+      StartButton.update();
+      StartButton.render(); 
+      if (StartButton.isClicked())
+{
+  menu = 1; 
+}
+}
+break;
+case 1:
+{
+
+  
   fill(255);
   textSize(15);
   text("Instructions:", 150, 90);
-  text("Control the ship's movement along the x axis by moving your mouse", 150, 110);
+  text("Control the ship's movement using the mouse", 150, 110);
   text("Click to fire", 150, 130);
   text("Don't get hit by the bullets!", 150, 150);
   textSize(50);
@@ -150,8 +178,9 @@ float ypos;
 
 
 
-
-
+  }
+  } 
+}
 void mousePressed() {
   bullets.add(new Bullet(int(random(180, 220)), 200, 200, mySpaceship.xpos, 880, 10));
 }
