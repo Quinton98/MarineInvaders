@@ -1,3 +1,7 @@
+import net.java.games.input.*;
+import org.gamecontrolplus.*;
+import org.gamecontrolplus.gui.*;
+
 import processing.sound.*;
 SoundFile music;
 Spaceship mySpaceship;
@@ -169,14 +173,10 @@ case 1:
     fill(0);
     rect (0, 0, width, height);
     fill(255);
-    textSize(200);
-    text("Game Over", 50, width / 2 - 200);
+    textSize(100);
+    text("Game Over, You suck.", 600, width / 2 - 200);
   }
 }
-float xpos;
-float ypos;
-
-
 
   }
   } 
