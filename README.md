@@ -1,14 +1,37 @@
-# FinalProject
+Marine Invaders 🐠🛡️
 
-Rebekah Wells, Bradley Carrara, Quinton Lott
+Team: Rebekah Wells, Bradley Carrara, Quinton Lott
 
-Description: Inspiration from Space Invaders we modified it into Marine Invaders so you are in a submarine in the ocean and you're shooting bullets at the marine aliens while they throw bombs at you. 
+Dive into the depths of the ocean in this thrilling arcade shooter inspired by Space Invaders! Take control of a submarine and defend the seas from waves of marine aliens. Dodge bombs, fire back, and see how long you can survive!
 
-How to play:
-1. press start/enter
-2. Control the ship's movement along the x axis by moving your mouse
-3. Click to fire
-4. Don't get hit by the bullets as you only have 5 lives 
-5. Have fun! Don't die. 
+How to Play
 
-Amusement level: 10/10
+Press Start or Enter to begin.
+
+Move your mouse to control the submarine along the X-axis.
+
+Click to fire torpedoes at the alien invaders.
+
+Avoid incoming bombs—your submarine has 5 lives.
+
+Survive as long as possible and have a blast!
+
+Features
+
+Fast-paced, ocean-themed action
+
+Challenging alien waves
+
+Simple controls, addictive gameplay
+
+Perfect for fans of classic arcade shooters
+
+Tips
+
+Keep moving to avoid bombs
+
+Focus on clearing one row at a time
+
+Save your lives for the tougher waves
+
+Amusement Level: 10/10 – you won’t want to surface until the game ends!
